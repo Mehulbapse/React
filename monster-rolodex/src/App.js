@@ -1,9 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
+
 import { Component } from "react";
 import CardList from "./components/card-list/card-list.component";
 import SearchBox from "./components/search-box/search-box.component";
-import './App.css'
+import "./App.css";
+
 class App extends Component {
   constructor() {
     super();
@@ -39,10 +40,11 @@ class App extends Component {
     });
     return (
       <div className="App">
+        <h1 className="app-title">Monster Rolodex</h1>
         <SearchBox
           onChangeHandler={onSearchChange}
           placeholder="search monster"
-          className="search-box"
+          className="monster-search-box"
         />
         <CardList monsters={filterMonsters} />
       </div>
